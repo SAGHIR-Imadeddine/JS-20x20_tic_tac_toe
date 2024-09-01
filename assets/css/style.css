@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --bloody     : #780000;
+    --red        : #C1121F;
+    --main       : #FDF0D5;
+    --dark-blue  : #003049;
+    --light-blue : #669BBC;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.primary-btn{
+    padding: 6px 14px;
+    color: var(--main);
+    text-decoration: none;
+    background-color: var(--dark-blue);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.primary-btn:hover{
+    background-color: #236c9a;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--main);
+    transition: ease-in-out;
+    transition-duration: 400ms;
+}
+
+
+.secondary-btn{
+    padding: 6px 14px;
+    color: var(--main);
+    text-decoration: none;
+    background-color: var(--bloody);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.secondary-btn:hover{
+    background-color: var(--red);
+    border: solid;
+    border-width: 1px;
+    border-color: var(--main);
+    transition: ease-in-out;
+    transition-duration: 400ms;
+}
+
+.btns{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+body{
+    background-color: var(--light-blue);
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+header{
+    background-color: var(--dark-blue);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#logo{
+    text-decoration: none;
+    font-size: x-large;
+    letter-spacing: 5px;
+    color: var(--main);
+}
+
+main{
+    width: 710px;
+    height:500px;
+    background-color: var(--main);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+main > div.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+main > div > span > ion-icon{
+    width: 60px;
+    height: 60px;
+}
+
+h1{
+    color: var(--dark-blue);
+    letter-spacing: 3px;
+}
+
+input{
+    width: 350px;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+ul#board{
+    width: 550px;
+    aspect-ratio: 1;
+    background-color: var(--main);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+li{
+    width: 5%;
+    border: solid;
+    border-width: 0.5px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
