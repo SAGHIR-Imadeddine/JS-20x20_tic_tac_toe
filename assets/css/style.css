@@ -160,3 +160,11 @@ li{
     justify-content: center;
     align-items: center;
 }
+
+#message{
+    padding-bottom: 4px;
+    text-align: center;
+    font-size: smaller;
+    width: 50%;
+    color: var(--red);
+}
