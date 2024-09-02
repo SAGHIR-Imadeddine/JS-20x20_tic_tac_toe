@@ -92,7 +92,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 #logo{
@@ -168,3 +168,17 @@ li{
     width: 50%;
     color: var(--red);
 }
+
+#score{
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: larger;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--bloody);
+}
+
+
+

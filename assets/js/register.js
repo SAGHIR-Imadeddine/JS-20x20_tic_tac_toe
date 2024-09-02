@@ -12,7 +12,7 @@ $(document).ready(function() {
 
         } else {
             var users = JSON.parse(localStorage.getItem('users')) || [];
-            
+            var score = JSON.parse(localStorage.getItem('score')) || [];
             
             var nextId = users.length > 0 ? Math.max(...users.map(user => user.id)) + 1 : 1;
 
@@ -27,11 +27,17 @@ $(document).ready(function() {
                 username: playerO,
                 symbol: 'O'
             });
-            
-           
+            score.push({
+                XPlayer: nextId,
+                OPlayer: nextId + 1,
+                Xscore: 0,
+                Oscore: 0
+            });
+          
 
 
             localStorage.setItem('users', JSON.stringify(users));
+            localStorage.setItem('score', JSON.stringify(score));
 
 
             window.location.href = './board.html';
