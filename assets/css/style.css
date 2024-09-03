@@ -130,6 +130,9 @@ main > div > span > ion-icon{
 h1{
     color: var(--dark-blue);
     letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input{

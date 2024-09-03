@@ -28,8 +28,8 @@ $(document).ready(function() {
                 symbol: 'O'
             });
             score.push({
-                XPlayer: nextId,
-                OPlayer: nextId + 1,
+                XPlayer: playerX,
+                OPlayer: playerO,
                 Xscore: 0,
                 Oscore: 0
             });
